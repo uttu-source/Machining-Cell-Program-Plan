@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/project">
+<Name>Machining Cell Program Plan</Name><Title>Two 5-Axis Machining Centers + Robotic Loading Cell (fictional customer)</Title>
+<ScheduleFromStart>1</ScheduleFromStart><StartDate>2027-01-04T08:00:00</StartDate><CalendarUID>1</CalendarUID><MinutesPerDay>480</MinutesPerDay><MinutesPerWeek>2400</MinutesPerWeek><DaysPerMonth>20</DaysPerMonth>
+<Calendars><Calendar><UID>1</UID><Name>Standard</Name><IsBaseCalendar>1</IsBaseCalendar><WeekDays>
+<WeekDay><DayType>1</DayType><DayWorking>0</DayWorking></WeekDay>
+<WeekDay><DayType>2</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+<WeekDay><DayType>3</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+<WeekDay><DayType>4</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+<WeekDay><DayType>5</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+<WeekDay><DayType>6</DayType><DayWorking>1</DayWorking><WorkingTimes><WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime><WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>
+<WeekDay><DayType>7</DayType><DayWorking>0</DayWorking></WeekDay>
+</WeekDays><Exceptions>
+<Exception><EnteredByOccurrences>0</EnteredByOccurrences><TimePeriod><FromDate>2027-05-31T00:00:00</FromDate><ToDate>2027-05-31T23:59:00</ToDate></TimePeriod><Occurrences>1</Occurrences><Type>1</Type><DayWorking>0</DayWorking></Exception>
+<Exception><EnteredByOccurrences>0</EnteredByOccurrences><TimePeriod><FromDate>2027-07-05T00:00:00</FromDate><ToDate>2027-07-05T23:59:00</ToDate></TimePeriod><Occurrences>1</Occurrences><Type>1</Type><DayWorking>0</DayWorking></Exception>
+</Exceptions></Calendar></Calendars><Tasks>
+<Task><UID>0</UID><ID>0</ID><Name>Machining Cell Program</Name><OutlineLevel>0</OutlineLevel><Summary>1</Summary></Task>
+<Task><UID>1</UID><ID>1</ID><Name>RFQ &amp; Quotation</Name><WBS>1</WBS><OutlineNumber>1</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-01-04T08:00:00</Start><Finish>2027-02-01T17:00:00</Finish><Duration>PT168H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>2</UID><ID>2</ID><Name>Receive RFQ and SOW, log in quote tracker</Name><WBS>1.1</WBS><OutlineNumber>1.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-04T08:00:00</Start><Finish>2027-01-04T17:00:00</Finish><Duration>PT8H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>3</UID><ID>3</ID><Name>Technical evaluation of scope (part, cycle time, tolerances)</Name><WBS>1.2</WBS><OutlineNumber>1.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-05T08:00:00</Start><Finish>2027-01-07T17:00:00</Finish><Duration>PT24H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>2</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>4</UID><ID>4</ID><Name>Send clarification questions to customer</Name><WBS>1.3</WBS><OutlineNumber>1.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-08T08:00:00</Start><Finish>2027-01-11T17:00:00</Finish><Duration>PT16H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>3</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>5</UID><ID>5</ID><Name>Build cost estimate in Quote Build-up</Name><WBS>1.4</WBS><OutlineNumber>1.4</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-12T08:00:00</Start><Finish>2027-01-15T17:00:00</Finish><Duration>PT32H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>4</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>6</UID><ID>6</ID><Name>Internal quote review and approval</Name><WBS>1.5</WBS><OutlineNumber>1.5</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-18T08:00:00</Start><Finish>2027-01-18T17:00:00</Finish><Duration>PT8H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>5</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>7</UID><ID>7</ID><Name>Quote submitted to customer</Name><WBS>1.6</WBS><OutlineNumber>1.6</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-18T17:00:00</Start><Finish>2027-01-18T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>6</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>8</UID><ID>8</ID><Name>Customer negotiation and PO</Name><WBS>1.7</WBS><OutlineNumber>1.7</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-01-19T08:00:00</Start><Finish>2027-02-01T17:00:00</Finish><Duration>PT80H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>7</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>9</UID><ID>9</ID><Name>Customer PO received</Name><WBS>1.8</WBS><OutlineNumber>1.8</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-01T17:00:00</Start><Finish>2027-02-01T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>8</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>10</UID><ID>10</ID><Name>Order Release</Name><WBS>2</WBS><OutlineNumber>2</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-02-02T08:00:00</Start><Finish>2027-02-08T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>11</UID><ID>11</ID><Name>Scope-of-supply check: PO vs quote</Name><WBS>2.1</WBS><OutlineNumber>2.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-02T08:00:00</Start><Finish>2027-02-03T17:00:00</Finish><Duration>PT16H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>9</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>12</UID><ID>12</ID><Name>Internal job order release</Name><WBS>2.2</WBS><OutlineNumber>2.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-03T17:00:00</Start><Finish>2027-02-03T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>11</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>13</UID><ID>13</ID><Name>Issue customer time schedule</Name><WBS>2.3</WBS><OutlineNumber>2.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-02-05T17:00:00</Finish><Duration>PT16H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>12</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>14</UID><ID>14</ID><Name>Kickoff meeting with customer</Name><WBS>2.4</WBS><OutlineNumber>2.4</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-08T08:00:00</Start><Finish>2027-02-08T17:00:00</Finish><Duration>PT8H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>13</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>15</UID><ID>15</ID><Name>Engineering</Name><WBS>3</WBS><OutlineNumber>3</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-03-12T17:00:00</Finish><Duration>PT216H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>16</UID><ID>16</ID><Name>Fixture design (hydraulic, 2 sets)</Name><WBS>3.1</WBS><OutlineNumber>3.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-02-24T17:00:00</Finish><Duration>PT120H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>12</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>17</UID><ID>17</ID><Name>Robot cell layout and guarding design</Name><WBS>3.2</WBS><OutlineNumber>3.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-02-24T17:00:00</Finish><Duration>PT120H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>12</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>18</UID><ID>18</ID><Name>CNC process and program development</Name><WBS>3.3</WBS><OutlineNumber>3.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-25T08:00:00</Start><Finish>2027-03-12T17:00:00</Finish><Duration>PT96H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>16</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>19</UID><ID>19</ID><Name>Customer design review approved</Name><WBS>3.4</WBS><OutlineNumber>3.4</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-24T17:00:00</Start><Finish>2027-02-24T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>16</PredecessorUID><Type>1</Type></PredecessorLink>
+<PredecessorLink><PredecessorUID>17</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>20</UID><ID>20</ID><Name>Procurement</Name><WBS>4</WBS><OutlineNumber>4</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-04-07T17:00:00</Finish><Duration>PT360H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>21</UID><ID>21</ID><Name>Long-lead items: spindles and CNC controls</Name><WBS>4.1</WBS><OutlineNumber>4.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-04T08:00:00</Start><Finish>2027-03-31T17:00:00</Finish><Duration>PT320H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>12</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>22</UID><ID>22</ID><Name>Robot and safety guarding</Name><WBS>4.2</WBS><OutlineNumber>4.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-25T08:00:00</Start><Finish>2027-04-07T17:00:00</Finish><Duration>PT240H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>19</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>23</UID><ID>23</ID><Name>Fixture components</Name><WBS>4.3</WBS><OutlineNumber>4.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-02-25T08:00:00</Start><Finish>2027-03-24T17:00:00</Finish><Duration>PT160H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>19</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>24</UID><ID>24</ID><Name>Build &amp; Assembly</Name><WBS>5</WBS><OutlineNumber>5</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-03-25T08:00:00</Start><Finish>2027-05-14T17:00:00</Finish><Duration>PT296H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>25</UID><ID>25</ID><Name>Machine 1 assembly</Name><WBS>5.1</WBS><OutlineNumber>5.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-04-01T08:00:00</Start><Finish>2027-04-28T17:00:00</Finish><Duration>PT160H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>21</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>26</UID><ID>26</ID><Name>Machine 2 assembly</Name><WBS>5.2</WBS><OutlineNumber>5.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-04-01T08:00:00</Start><Finish>2027-04-30T17:00:00</Finish><Duration>PT176H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>21</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>27</UID><ID>27</ID><Name>Fixture build and CMM inspection</Name><WBS>5.3</WBS><OutlineNumber>5.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-03-25T08:00:00</Start><Finish>2027-04-07T17:00:00</Finish><Duration>PT80H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>23</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>28</UID><ID>28</ID><Name>Cell integration and controls I/O check</Name><WBS>5.4</WBS><OutlineNumber>5.4</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-05-03T08:00:00</Start><Finish>2027-05-14T17:00:00</Finish><Duration>PT80H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>25</PredecessorUID><Type>1</Type></PredecessorLink>
+<PredecessorLink><PredecessorUID>26</PredecessorUID><Type>1</Type></PredecessorLink>
+<PredecessorLink><PredecessorUID>27</PredecessorUID><Type>1</Type></PredecessorLink>
+<PredecessorLink><PredecessorUID>22</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>29</UID><ID>29</ID><Name>Runoff &amp; Acceptance</Name><WBS>6</WBS><OutlineNumber>6</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-05-17T08:00:00</Start><Finish>2027-05-26T17:00:00</Finish><Duration>PT64H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>30</UID><ID>30</ID><Name>Internal quality check against runoff checklist</Name><WBS>6.1</WBS><OutlineNumber>6.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-05-17T08:00:00</Start><Finish>2027-05-19T17:00:00</Finish><Duration>PT24H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>28</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>31</UID><ID>31</ID><Name>Pre-acceptance runoff at our plant (Cpk study)</Name><WBS>6.2</WBS><OutlineNumber>6.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-05-20T08:00:00</Start><Finish>2027-05-26T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>30</PredecessorUID><Type>1</Type></PredecessorLink>
+<PredecessorLink><PredecessorUID>18</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>32</UID><ID>32</ID><Name>Customer buy-off signed</Name><WBS>6.3</WBS><OutlineNumber>6.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-05-26T17:00:00</Start><Finish>2027-05-26T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>31</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>33</UID><ID>33</ID><Name>Delivery &amp; Installation</Name><WBS>7</WBS><OutlineNumber>7</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-05-27T08:00:00</Start><Finish>2027-07-01T17:00:00</Finish><Duration>PT200H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>34</UID><ID>34</ID><Name>Teardown, crate and ship</Name><WBS>7.1</WBS><OutlineNumber>7.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-05-27T08:00:00</Start><Finish>2027-06-07T17:00:00</Finish><Duration>PT56H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>32</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>35</UID><ID>35</ID><Name>Installation and leveling at customer site</Name><WBS>7.2</WBS><OutlineNumber>7.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-06-08T08:00:00</Start><Finish>2027-06-21T17:00:00</Finish><Duration>PT80H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>34</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>36</UID><ID>36</ID><Name>Final runoff at customer site</Name><WBS>7.3</WBS><OutlineNumber>7.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-06-22T08:00:00</Start><Finish>2027-06-28T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>35</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>37</UID><ID>37</ID><Name>Operator and maintenance training</Name><WBS>7.4</WBS><OutlineNumber>7.4</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-06-29T08:00:00</Start><Finish>2027-07-01T17:00:00</Finish><Duration>PT24H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>36</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>38</UID><ID>38</ID><Name>Final acceptance</Name><WBS>7.5</WBS><OutlineNumber>7.5</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-07-01T17:00:00</Start><Finish>2027-07-01T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>37</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>39</UID><ID>39</ID><Name>Closeout</Name><WBS>8</WBS><OutlineNumber>8</OutlineNumber><OutlineLevel>1</OutlineLevel><Type>1</Type><Start>2027-07-02T08:00:00</Start><Finish>2027-07-09T17:00:00</Finish><Duration>PT40H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>1</Summary><Manual>0</Manual>
+</Task>
+<Task><UID>40</UID><ID>40</ID><Name>Final cost book reconciliation</Name><WBS>8.1</WBS><OutlineNumber>8.1</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-07-02T08:00:00</Start><Finish>2027-07-07T17:00:00</Finish><Duration>PT24H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>38</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>41</UID><ID>41</ID><Name>Lessons learned and handover to service</Name><WBS>8.2</WBS><OutlineNumber>8.2</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-07-08T08:00:00</Start><Finish>2027-07-09T17:00:00</Finish><Duration>PT16H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>0</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>40</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+<Task><UID>42</UID><ID>42</ID><Name>Project closed</Name><WBS>8.3</WBS><OutlineNumber>8.3</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Start>2027-07-09T17:00:00</Start><Finish>2027-07-09T17:00:00</Finish><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat><Milestone>1</Milestone><Summary>0</Summary><Manual>0</Manual>
+<PredecessorLink><PredecessorUID>41</PredecessorUID><Type>1</Type></PredecessorLink>
+</Task>
+</Tasks><Resources>
+<Resource><UID>1</UID><ID>1</ID><Name>Applications Engineer</Name><Type>1</Type></Resource>
+<Resource><UID>2</UID><ID>2</ID><Name>Assembly</Name><Type>1</Type></Resource>
+<Resource><UID>3</UID><ID>3</ID><Name>Automation Engineer</Name><Type>1</Type></Resource>
+<Resource><UID>4</UID><ID>4</ID><Name>Controls Engineer</Name><Type>1</Type></Resource>
+<Resource><UID>5</UID><ID>5</ID><Name>Logistics</Name><Type>1</Type></Resource>
+<Resource><UID>6</UID><ID>6</ID><Name>Mechanical Design</Name><Type>1</Type></Resource>
+<Resource><UID>7</UID><ID>7</ID><Name>Project Manager</Name><Type>1</Type></Resource>
+<Resource><UID>8</UID><ID>8</ID><Name>Purchasing</Name><Type>1</Type></Resource>
+<Resource><UID>9</UID><ID>9</ID><Name>Quality</Name><Type>1</Type></Resource>
+<Resource><UID>10</UID><ID>10</ID><Name>Sales Manager</Name><Type>1</Type></Resource>
+<Resource><UID>11</UID><ID>11</ID><Name>Service</Name><Type>1</Type></Resource>
+</Resources><Assignments>
+<Assignment><UID>1</UID><TaskUID>2</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>2</UID><TaskUID>3</TaskUID><ResourceUID>1</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>3</UID><TaskUID>4</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>4</UID><TaskUID>5</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>5</UID><TaskUID>6</TaskUID><ResourceUID>10</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>6</UID><TaskUID>7</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>7</UID><TaskUID>8</TaskUID><ResourceUID>10</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>8</UID><TaskUID>9</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>9</UID><TaskUID>11</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>10</UID><TaskUID>12</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>11</UID><TaskUID>13</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>12</UID><TaskUID>14</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>13</UID><TaskUID>16</TaskUID><ResourceUID>6</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>14</UID><TaskUID>17</TaskUID><ResourceUID>3</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>15</UID><TaskUID>18</TaskUID><ResourceUID>1</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>16</UID><TaskUID>19</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>17</UID><TaskUID>21</TaskUID><ResourceUID>8</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>18</UID><TaskUID>22</TaskUID><ResourceUID>8</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>19</UID><TaskUID>23</TaskUID><ResourceUID>8</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>20</UID><TaskUID>25</TaskUID><ResourceUID>2</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>21</UID><TaskUID>26</TaskUID><ResourceUID>2</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>22</UID><TaskUID>27</TaskUID><ResourceUID>9</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>23</UID><TaskUID>28</TaskUID><ResourceUID>4</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>24</UID><TaskUID>30</TaskUID><ResourceUID>9</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>25</UID><TaskUID>31</TaskUID><ResourceUID>1</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>26</UID><TaskUID>32</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>27</UID><TaskUID>34</TaskUID><ResourceUID>5</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>28</UID><TaskUID>35</TaskUID><ResourceUID>11</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>29</UID><TaskUID>36</TaskUID><ResourceUID>1</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>30</UID><TaskUID>37</TaskUID><ResourceUID>11</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>31</UID><TaskUID>38</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>32</UID><TaskUID>40</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>33</UID><TaskUID>41</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+<Assignment><UID>34</UID><TaskUID>42</TaskUID><ResourceUID>7</ResourceUID><Units>1</Units></Assignment>
+</Assignments></Project>
